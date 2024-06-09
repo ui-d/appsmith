@@ -1,28 +1,4 @@
-# Next.js Starter Template
-
-This template is up to Next.js `13.5.3`. Please run `pnpm update --latest` after creating your project.
-
-> [!NOTE]
-> BTW, [dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates) is already configured in the template. this should keep the project up-to-date. Moreover, with your first push to github, It will open PRs to update the dependencies.
-
-[![CI-check](https://github.com/AhmedBaset/next-template/actions/workflows/CI.yml/badge.svg)](https://github.com/AhmedBaset/next-template/actions/workflows/CI.yml)
-
-## Create a new project
-
-Copy the command below and run it in your terminal let the magic happen.
-
-```bash
-# with pnpm (recommended)
-pnpm create next-app -e https://github.com/AhmedBaset/next-template my-app
-
-# with npm
-npx create-next-app -e https://github.com/AhmedBaset/next-template my-app
-
-# with yarn
-yarn create next-app -e https://github.com/AhmedBaset/next-template my-app
-```
-
-> **Note**: When you use this template, VScode will prompt you to install recommended extensions and settings.
+# AppSmith
 
 ## Features
 
@@ -60,11 +36,3 @@ This template uses `pnpm` as the package manager. If you want to use other packa
 ```sh
 pnpm shadcn-ui add <component> [--overwrite]
 ```
-
-## TODOs:
-
-- [ ] Configure `next-auth`
-- [ ] Configure `Prisma`
-- [ ] Configure `Husky`, `lint-staged`
-# appsmith
-# appsmith
