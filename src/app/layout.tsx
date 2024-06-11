@@ -5,8 +5,6 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import { Providers } from "@/components/providers";
-import { TailwindIndicator } from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {
   title: {
@@ -14,10 +12,6 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
   // metadataBase: new URL(siteConfig.url),
   icons: {
     icon: "/favicon.ico",
@@ -26,11 +20,10 @@ export const metadata: Metadata = {
   },
   authors: [
     {
-      name: "Ahmed Abdelbaset",
-      url: "https://github.com/AhmedBaset",
+      name: "Dawid Nawrocki",
+      url: "https://github.com/ui-d",
     },
   ],
-  creator: "a7med3bdulbaset",
   openGraph: {
     type: "website",
     locale: "ar_EG",
@@ -55,10 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("min-h-screen antialiased", fontSans.className)}>
-        <Providers>
-          {children}
-          <TailwindIndicator />
-        </Providers>
+        {children}
       </body>
     </html>
   );

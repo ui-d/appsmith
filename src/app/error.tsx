@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/fundamentals/Button";
 
 export default function Error({
   error,
