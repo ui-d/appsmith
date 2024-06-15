@@ -8,7 +8,6 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "tailwindcss", "prettier"],
   extends: [
-    "next/core-web-vitals",
     "prettier",
     "eslint:recommended",
     "plugin:react/recommended",

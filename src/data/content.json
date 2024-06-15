@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "Enterprise scale security, and governance",
+    "subtitle": "From startups to enterprises, businesses are improving operations and increasing efficiency by building custom apps on Appsmith."
+  },
+  "features": [
+    {
+      "title": "Self-hosting with air-gapped deployment options",
+      "description": "Run any edition of Appsmith in your infrastructure."
+    },
+    {
+      "title": "Embeddable within existing apps with shared logins",
+      "description": "Extend the functionality of your legacy and SaaS applications."
+    },
+    {
+      "title": "Open source under Apache 2.0 license",
+      "description": "Build with high transparency and low vendor risk."
+    },
+    {
+      "title": "SAML and OIDC SSO",
+      "description": "Secure authentication and authorization with your login provider."
+    },
+    {
+      "title": "Role-based access controls",
+      "description": "Customize granular roles, groups, and permissions."
+    },
+    {
+      "title": "SCIM-based user provisioning",
+      "description": "Import users and roles from your IdP."
+    },
+    {
+      "title": "Audit logging",
+      "description": "Track organizational use and remediate issues."
+    },
+    {
+      "title": "SOC 2 Type II",
+      "description": "Proven security processes and controls."
+    },
+    {
+      "title": "Award-winning support",
+      "description": "Development and deployment assistance with rapid response SLAs."
+    }
+  ],
+  "footer": {
+    "callToAction": "Appsmith is lightweight, fast, and developer-focused. It\u2019s easy to get started.",
+    "buttons": [
+      {
+        "text": "Get started for free",
+        "link": "#"
+      },
+      {
+        "text": "Get a demo",
+        "link": "#"
+      },
+      {
+        "text": "See pricing and plans",
+        "link": "#"
+      }
+    ]
+  }
+}

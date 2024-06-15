@@ -1,18 +1,21 @@
-// TODO: Remove this entire file and start your own project from scratch.
-// Happy coding!
+import content from "@/data/content.json";
 
-import Link from "next/link";
-import { GithubIcon } from "lucide-react";
-
-import { siteConfig } from "@/config";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/fundamentals/Button";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { CallToAction } from "@/components/CallToAction";
+import { FeatureGrid } from "@/components/FeatureGrid";
+import { Hero } from "@/components/Hero";
 
 export default function IndexPage() {
+  const { title, subtitle } = content.header;
   return (
-    <main className="container grid max-w-prose items-center gap-6 space-y-4 text-balance pb-8 pt-6 md:py-10">
-      test
-    </main>
+    <div>
+      <Hero title={title} subtitle={subtitle} />
+      <main>
+        <FeatureGrid features={content.features} />
+        {/*<CallToAction*/}
+        {/*  text={content.footer.callToAction}*/}
+        {/*  buttons={content.footer.buttons}*/}
+        {/*/>*/}
+      </main>
+    </div>
   );
 }
