@@ -11,10 +11,10 @@ export default function IndexPage() {
       <Hero title={title} subtitle={subtitle} />
       <main>
         <FeatureGrid features={content.features} />
-        {/*<CallToAction*/}
-        {/*  text={content.footer.callToAction}*/}
-        {/*  buttons={content.footer.buttons}*/}
-        {/*/>*/}
+        <CallToAction
+          text={content.footer.callToAction}
+          buttons={content.footer.buttons}
+        />
       </main>
     </div>
   );

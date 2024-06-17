@@ -1,7 +1,13 @@
-import { Alexandria as FontSans } from "next/font/google";
+import { DM_Sans, Red_Hat_Display } from "next/font/google";
 
-export const fontSans = FontSans({
+export const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
-  variable: "--font-sans",
-  fallback: ["sans-serif"],
+  variable: "--font-red-hat-display",
+  display: "swap",
+});
+
+export const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
 });

@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/lib/fonts";
+import { dmSans, redHatDisplay } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -47,7 +47,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen antialiased", fontSans.className)}>
+      <body
+        className={cn(
+          "min-h-screen text-primary antialiased",
+          redHatDisplay.variable,
+          dmSans.variable
+        )}
+      >
         {children}
       </body>
     </html>

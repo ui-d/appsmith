@@ -7,5 +7,5 @@ type ContainerProps = HTMLAttributes<HTMLDivElement> & {
 };
 
 export const Container: FC<ContainerProps> = ({ children }) => (
-  <div className={cn("mx-auto max-w-7xl px-4")}>{children}</div>
+  <div className={cn("container")}>{children}</div>
 );

@@ -1,6 +1,5 @@
 import { FC, HTMLAttributes } from "react";
-
-import { Button } from "@/components/fundamentals/Button";
+import { Button } from "@/components";
 
 type CallToActionProps = HTMLAttributes<HTMLDivElement> & {
   text: string;
@@ -12,12 +11,7 @@ export const CallToAction: FC<CallToActionProps> = ({ text, buttons }) => (
     <p className="mb-4">{text}</p>
     <div className="flex justify-center gap-4">
       {buttons.map((button, index) => (
-        <Button
-          key={index}
-          onClick={() => (window.location.href = button.link)}
-        >
-          {button.text}
-        </Button>
+        <Button key={index}>{button.text}</Button>
       ))}
     </div>
   </div>

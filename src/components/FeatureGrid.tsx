@@ -1,8 +1,5 @@
 import { FC } from "react";
-
-import { FeatureCard } from "@/components/FeatureCard";
-import { Container } from "@/components/fundamentals/Container";
-import { Section } from "@/components/fundamentals/Section";
+import { Container, FeatureCard, Section } from "@/components";
 
 type FeatureGridProps = {
   features: { title: string; description: string }[];
@@ -11,7 +8,7 @@ type FeatureGridProps = {
 export const FeatureGrid: FC<FeatureGridProps> = ({ features }) => (
   <Section>
     <Container>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}

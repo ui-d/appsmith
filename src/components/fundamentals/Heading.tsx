@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils";
 type HeadingProps = HTMLAttributes<HTMLHeadingElement> & {
   level: 1 | 2 | 3 | 4 | 5 | 6;
   children: ReactNode;
-  classNames: string;
+  className?: string;
 };
 
-export const Heading: FC<HeadingProps> = ({ level, classNames, children }) => {
+export const Heading: FC<HeadingProps> = ({ level, className, children }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-  return <Tag className={cn(`text-${level * 10}`, classNames)}>{children}</Tag>;
+  return <Tag className={cn("font-heading", className)}>{children}</Tag>;
 };

@@ -1,6 +1,5 @@
 import { FC } from "react";
-
-import { Heading } from "@/components/fundamentals/Heading";
+import { Heading, Section, Text } from "@/components";
 
 type HeroProps = {
   title: string;
@@ -9,11 +8,13 @@ type HeroProps = {
 
 export const Hero: FC<HeroProps> = ({ title, subtitle }) => {
   return (
-    <header className="my-8 text-center">
-      <Heading classNames="text-4xl font-bold" level={1}>
-        {title}
-      </Heading>
-      <p className="text-xl">{subtitle}</p>
-    </header>
+    <Section>
+      <header className="mx-auto my-8 flex max-w-3xl flex-col gap-5 text-center">
+        <Heading level={1} className="text-balance text-6xl font-extrabold">
+          {title}
+        </Heading>
+        <Text className="text-2xl text-secondary">{subtitle}</Text>
+      </header>
+    </Section>
   );
 };
