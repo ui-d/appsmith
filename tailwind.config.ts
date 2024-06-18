@@ -20,6 +20,7 @@ const config = {
       },
       backgroundImage: {
         "brand-gradient": "linear-gradient(90deg, #7441F6 0%, #501FCD 100%)",
+        "cta-texture": "url('/background.webp')",
       },
       colors: {
         brand: "#7441F6",
@@ -28,7 +29,8 @@ const config = {
         textDarkGray: "#111928",
         textGray: "#5E5772",
         lightGray: "#DDDBEF",
-        accent: "#bb86fc",
+        bgGray: "#F0F3FB",
+        accent: "#FF6D2D",
         white: "#fff",
       },
       fontSize: {
@@ -39,7 +41,7 @@ const config = {
         xl: ["1.25rem", "1.75rem"],
         "2xl": ["1.5rem", "2.15rem"],
         "3xl": ["1.875rem", "2.25rem"],
-        "4xl": ["2.25rem", "2.5rem"],
+        "4xl": ["2.5rem", "1.2em"],
         "5xl": ["3rem", "1"],
         "6xl": ["4rem", "1.2em"],
       },
