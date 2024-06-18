@@ -10,11 +10,11 @@ export const Hero: FC<HeroProps> = ({ title, subtitle }) => {
   return (
     <Section>
       <Container>
-        <header className="mx-auto my-8 flex max-w-3xl flex-col gap-5 text-center">
+        <header className="md:pt-30 mx-auto my-8 flex max-w-3xl flex-col gap-5 pt-10 text-center tracking-tighter lg:pt-52">
           <Heading
             highlight={2}
             level={1}
-            className="text-balance text-6xl font-extrabold"
+            className="text-balance text-5xl font-extrabold md:text-6xl"
           >
             {title}
           </Heading>

@@ -46,15 +46,21 @@
     "buttons": [
       {
         "text": "Get started for free",
-        "link": "#"
+        "link": "https://www.appsmith.com",
+        "variant": "primary",
+        "size": "lg"
       },
       {
         "text": "Get a demo",
-        "link": "#"
+        "link": "/demo",
+        "variant": "outline",
+        "size": "lg"
       },
       {
         "text": "See pricing and plans",
-        "link": "#"
+        "link": "/pricing",
+        "variant": "link",
+        "size": "link"
       }
     ]
   }

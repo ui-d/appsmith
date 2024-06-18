@@ -24,6 +24,7 @@ const config = {
       },
       colors: {
         brand: "#7441F6",
+        lightBrand: "#7441F633",
         primary: "#190F36",
         secondary: "#190f36b3",
         textDarkGray: "#111928",

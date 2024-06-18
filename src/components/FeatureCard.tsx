@@ -41,7 +41,7 @@ export const FeatureCard: FC<FeatureCardProps> = ({
         position: "relative",
       }}
     >
-      <div className="feature-card relative z-10 m-0.5 flex w-full flex-col gap-4 rounded bg-white p-4">
+      <div className="feature-card relative z-10 m-0.5 flex w-full flex-col gap-5 rounded bg-white p-5">
         <Avatar alt="Avatar" />
         <Heading level={3} className="text-2xl font-bold text-textDarkGray">
           {title}

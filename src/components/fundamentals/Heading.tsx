@@ -27,11 +27,9 @@ export const Heading: FC<HeadingProps> = ({
     <Tag className={cn("font-heading", className)}>
       {highlight ? (
         <>
-          <div className="relative inline-block w-auto border-l-2 border-accent bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+          <div className="relative inline-block w-auto border-brand pl-4 text-brand before:absolute before:left-0 before:block before:h-full before:w-1 before:scale-y-105 before:rounded before:bg-brand before:content-['']">
             {highlightedWords}
-            <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 bg-red-100">
-              dasf
-            </div>
+            <div className="from-lightBrand absolute bottom-0 left-0 right-0 top-0 -z-10 bg-gradient-to-r to-white"></div>
           </div>
           {` ${remainingWords}`}
         </>

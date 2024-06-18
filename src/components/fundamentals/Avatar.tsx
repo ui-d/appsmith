@@ -14,7 +14,7 @@ type AvatarProps = {
 export const Avatar: FC<AvatarProps> = ({ src, alt, className }) => (
   <AvatarPrimitive.Root
     className={cn(
-      "inline-flex h-10 w-10 select-none items-center justify-center overflow-hidden rounded-full align-middle",
+      "inline-flex h-[50px] w-[50px] select-none items-center justify-center overflow-hidden rounded-full align-middle",
       className
     )}
   >
@@ -23,6 +23,6 @@ export const Avatar: FC<AvatarProps> = ({ src, alt, className }) => (
       alt={alt}
       className="h-full w-full object-cover"
     />
-    <AvatarPrimitive.Fallback className="bg-brand-gradient h-full w-full bg-gray-200" />
+    <AvatarPrimitive.Fallback className="h-full w-full bg-gray-200 bg-brand-gradient" />
   </AvatarPrimitive.Root>
 );
