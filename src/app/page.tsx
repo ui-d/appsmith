@@ -13,7 +13,7 @@ export default function IndexPage() {
         <FeatureGrid features={content.features} />
         <CallToAction
           text={content.footer.callToAction}
-          buttons={content.footer.buttons}
+          buttons={content.footer.buttons as any}
         />
       </main>
     </div>

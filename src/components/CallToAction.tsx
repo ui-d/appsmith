@@ -3,20 +3,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button, Container, Heading, Section } from "@/components";
 
+import type { ButtonProps } from "@/components/fundamentals/Button";
+
 type CallToActionProps = HTMLAttributes<HTMLDivElement> & {
   text: string;
   buttons: {
     text: string;
     link: string;
-    variant: "default" | "primary" | "outline" | "link";
-    size?: "default" | "sm" | "lg" | "icon";
+    variant: ButtonProps["variant"];
+    size: ButtonProps["size"];
   }[];
 };
 
 export const CallToAction: FC<CallToActionProps> = ({ text, buttons }) => (
   <Section>
     <Container>
-      <div className="bg-bgGray bg-cta-texture flex items-center rounded-xl bg-cover">
+      <div className="flex items-center rounded-xl bg-bgGray bg-cta-texture bg-cover">
         <div className="flex w-full flex-col gap-12 p-5 md:pb-12 md:pl-12 md:pr-0 md:pt-12 lg:w-7/12">
           <Heading
             level={2}
